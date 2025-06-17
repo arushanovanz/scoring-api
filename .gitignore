@@ -12,3 +12,4 @@ venv
 *.log
 *.sqlite3
 .idea
+ .idea/workspace.xml

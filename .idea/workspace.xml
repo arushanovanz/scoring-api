@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92f4a141-09e1-4342-adfa-be324b5ce8fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.flake8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scoring-api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mypy.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ci.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__main__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api_requests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/handlers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scoring_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api_requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api_requests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,9 +51,11 @@
     "Python tests.Python tests in test_api.py.executor": "Run",
     "Python tests.pytest for test_api.TestSuite.executor": "Run",
     "Python tests.pytest for test_api.TestSuite.test_empty_request.executor": "Debug",
-    "Python tests.pytest for test_api.TestSuite.test_invalid_interests_request.executor": "Run",
+    "Python tests.pytest for test_api.TestSuite.test_invalid_interests_request.executor": "Debug",
+    "Python tests.pytest for test_api.TestSuite.test_invalid_method_request.executor": "Run",
+    "Python tests.pytest for test_api.TestSuite.test_ok_score_admin_request.executor": "Debug",
     "Python tests.pytest for test_api.executor": "Run",
-    "Python.__main__.executor": "Debug",
+    "Python.__main__.executor": "Run",
     "Python.api.executor": "Run",
     "Python.app.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -91,7 +74,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.__main__">
+  <component name="RunManager" selected="Python tests.pytest for test_api.TestSuite">
     <configuration name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="scoring-api" />
       <option name="ENV_FILES" value="" />
@@ -112,36 +95,6 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_api.TestSuite.test_invalid_method_request" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="scoring-api" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_api.TestSuite.test_invalid_method_request&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_api.TestSuite.test_ok_score_request" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="scoring-api" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_api.TestSuite.test_ok_score_request&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest for test_api.TestSuite" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -178,20 +131,54 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_api.TestSuite.test_invalid_method_request" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="scoring-api" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$USER_HOME$/Library/Caches/pypoetry/virtualenvs/scoring-api-dmILNlTV-py3.12/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api.TestSuite.test_invalid_method_request&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_api.TestSuite.test_ok_score_admin_request" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="scoring-api" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$USER_HOME$/Library/Caches/pypoetry/virtualenvs/scoring-api-dmILNlTV-py3.12/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api.TestSuite.test_ok_score_admin_request&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.__main__" />
-      <item itemvalue="Python tests.Python tests for test_api.TestSuite.test_invalid_method_request" />
-      <item itemvalue="Python tests.Python tests for test_api.TestSuite.test_ok_score_request" />
+      <item itemvalue="Python tests.pytest for test_api.TestSuite.test_invalid_method_request" />
+      <item itemvalue="Python tests.pytest for test_api.TestSuite.test_ok_score_admin_request" />
       <item itemvalue="Python tests.pytest for test_api.TestSuite.test_invalid_interests_request" />
       <item itemvalue="Python tests.pytest for test_api.TestSuite" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.__main__" />
         <item itemvalue="Python tests.pytest for test_api.TestSuite" />
+        <item itemvalue="Python.__main__" />
+        <item itemvalue="Python tests.pytest for test_api.TestSuite.test_ok_score_admin_request" />
+        <item itemvalue="Python tests.pytest for test_api.TestSuite.test_invalid_method_request" />
         <item itemvalue="Python tests.pytest for test_api.TestSuite.test_invalid_interests_request" />
-        <item itemvalue="Python tests.Python tests for test_api.TestSuite.test_ok_score_request" />
-        <item itemvalue="Python tests.Python tests for test_api.TestSuite.test_invalid_method_request" />
       </list>
     </recent_temporary>
   </component>
@@ -216,14 +203,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/handlers.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/handlers.py</url>
-          <line>147</line>
-          <option name="timeStamp" value="50" />
+          <url>file://$PROJECT_DIR$/src/api_requests.py</url>
+          <line>82</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -234,10 +216,5 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="tests">
-        <watch expression="request" language="Python" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

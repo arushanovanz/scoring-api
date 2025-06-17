@@ -1,4 +1,4 @@
-# Простой api скоринга на Flask
+# Простой api скоринга на HttpServer
 
 ## (Запуск проекта)
 poetry run scoring-api
