@@ -43,7 +43,7 @@ class EmailField(CharField):
 
 class PhoneField(Field):
     def __init__(self, required: bool = False, nullable: bool = True):
-        super().__init__(required=required, nullable=nullable, field_type=(str))
+        super().__init__(required=required, nullable=nullable, field_type=(str, int))
 
     def _validate(self, value: Union[str, int]) -> str:
         str_value = str(value)

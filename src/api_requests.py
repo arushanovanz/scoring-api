@@ -1,7 +1,7 @@
 import datetime
 import hashlib
-from .model import ClientIDsField, CharField, DateField, EmailField, GenderField, PhoneField, BirthDayField,\
-    ArgumentFileField
+from .model import ClientIDsField, CharField, DateField, EmailField, GenderField, PhoneField, BirthDayField, \
+    ArgumentFileField, Field
 
 SALT = "Otus"
 ADMIN_LOGIN = "admin"
@@ -70,31 +70,23 @@ class OnlineScoreRequest(object):
     gender = GenderField(required=False, nullable=True)
 
     def __init__(self, arguments):
-        self.first_name = arguments.get('first_name')
-        self.last_name = arguments.get('last_name')
-        self.email = arguments.get('email')
-        self.phone = arguments.get('phone')
-        self.birthday = arguments.get('birthday')
-        self.gender = arguments.get('gender')
+            for field_name, field in self.__class__.__dict__.items():
+                if isinstance(field, Field):
+                    field.field_name = field_name
 
-        has_pairs = [
-            bool(self.phone and self.email),
-            bool(self.first_name and self.last_name),
-            bool(self.gender is not None and self.birthday)
-        ]
+            for field_name, field in self.__class__.__dict__.items():
+                if isinstance(field, Field):
+                    value = arguments.get(field_name)
+                    setattr(self, field_name, field.validate(value))
 
-        if not any(has_pairs):
-            raise ValueError("Requires at least one pair: phone-email, first_name-last_name, or gender-birthday")
+            has_pairs = [
+                bool(self.phone and self.email),
+                bool(self.first_name and self.last_name),
+                bool(self.gender is not None and self.birthday)
+            ]
 
-        if self.phone and not str(self.phone).startswith('7'):
-            raise ValueError("Phone must start with 7")
-
-        if '@' not in str(self.email):
-            raise ValueError("Email must contain with @")
-
-        if self.gender not in {0, 1, 2}:
-            raise ValueError(f"{self.gender} must be 0, 1 or 2")
-
+            if not any(has_pairs):
+                raise ValueError("Requires at least one pair: phone-email, first_name-last_name, or gender-birthday")
 
 
 def check_auth(request_data):

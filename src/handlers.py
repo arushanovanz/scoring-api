@@ -5,6 +5,7 @@ from http.server import BaseHTTPRequestHandler
 
 from src.api_requests import check_auth, Request, OnlineScoreRequest, ClientsInterestsRequest
 from src.scoring_service import get_score, get_interests
+from src.store import Store
 
 OK = 200
 BAD_REQUEST = 400
@@ -84,7 +85,7 @@ def method_handler(request_dict, ctx, store):
 
 class MainHTTPHandler(BaseHTTPRequestHandler):
     router = {"method": method_handler}
-    store = None
+    store= Store()
 
     def get_request_id(self, headers):
         return headers.get('X-Request-ID', uuid.uuid4().hex)

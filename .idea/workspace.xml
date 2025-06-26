@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92f4a141-09e1-4342-adfa-be324b5ce8fb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/api_requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api_requests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +22,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;arushanovanz&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/arushanovanz/scoring-api.git&quot;,
+    &quot;accountId&quot;: &quot;49f74038-2e36-4986-bf73-e020808a8692&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/scoring-api/models.py" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -37,33 +48,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python tests.Python tests for test.TestSuite.executor": "Run",
-    "Python tests.Python tests for test_api.TestSuite.executor": "Run",
-    "Python tests.Python tests for test_api.TestSuite.test_bad_auth.executor": "Debug",
-    "Python tests.Python tests for test_api.TestSuite.test_empty_request.executor": "Debug",
-    "Python tests.Python tests for test_api.TestSuite.test_invalid_interests_request.executor": "Debug",
-    "Python tests.Python tests for test_api.TestSuite.test_invalid_method_request.executor": "Run",
-    "Python tests.Python tests for test_api.TestSuite.test_invalid_score_request.executor": "Debug",
-    "Python tests.Python tests for test_api.TestSuite.test_ok_score_request.executor": "Run",
-    "Python tests.Python tests in test_api.py.executor": "Run",
-    "Python tests.pytest for test_api.TestSuite.executor": "Run",
-    "Python tests.pytest for test_api.TestSuite.test_empty_request.executor": "Debug",
-    "Python tests.pytest for test_api.TestSuite.test_invalid_interests_request.executor": "Debug",
-    "Python tests.pytest for test_api.TestSuite.test_invalid_method_request.executor": "Run",
-    "Python tests.pytest for test_api.TestSuite.test_ok_score_admin_request.executor": "Debug",
-    "Python tests.pytest for test_api.executor": "Run",
-    "Python.__main__.executor": "Run",
-    "Python.api.executor": "Run",
-    "Python.app.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/narushanova/PycharmProjects/scoring-api/tests"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for test.TestSuite.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_api.TestSuite.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_api.TestSuite.test_bad_auth.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for test_api.TestSuite.test_empty_request.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for test_api.TestSuite.test_invalid_interests_request.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for test_api.TestSuite.test_invalid_method_request.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_api.TestSuite.test_invalid_score_request.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for test_api.TestSuite.test_ok_score_request.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_api.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_api.TestSuite.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_api.TestSuite.test_empty_request.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.pytest for test_api.TestSuite.test_invalid_interests_request.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.pytest for test_api.TestSuite.test_invalid_method_request.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_api.TestSuite.test_ok_score_admin_request.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.pytest for test_api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.__main__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.api.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/narushanova/PycharmProjects/scoring-api/tests&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests" />
@@ -201,13 +212,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/api_requests.py</url>
-          <line>82</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
